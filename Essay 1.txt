@@ -1,0 +1,15 @@
+HTML stands for HyperText Markup Language. 
+It is the language that defines the structure and content of a web page. 
+HTML uses tags and elements to mark up different parts of the page, such as headings, paragraphs, images, links, etc. 
+HTML is kind of like the skeleton of the web page. 
+
+
+CSS stands for Cascading Style Sheets. 
+It is the language that controls the presentation and appearance of a web page. 
+CSS uses rules and properties to style different elements of the page, such as colors, fonts, layouts, animations, etc. 
+CSS is kind of like the skin of the web page.
+
+JavaScript is a scripting language that enables the behavior and interactivity of a web page. 
+JavaScript can manipulate the HTML and CSS elements of the page, as well as communicate with the server, the browser, and the user. 
+JavaScript can also create dynamic features, such as pop-ups, sliders, forms, games, etc. 
+JavaScript is kind of like the muscles of the web page. 

@@ -7,6 +7,7 @@ import moonImg from "./SunAndMoon/images/moon.png";
 const SunAndMoon = () => {
     const [imgSrc, imgSrcUpdate] = useState(moonImg);
 
+    //Javascript Layer (kinda)
     const changeToSun = () => {
         imgSrcUpdate(sunImg);
     };
