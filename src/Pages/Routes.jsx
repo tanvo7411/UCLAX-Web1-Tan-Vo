@@ -1,20 +1,54 @@
-import styled from "styled-components";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
+// global Styles
+import "@/Common/css/normalize.css";
+import "@/Common/css/global.scss";
+
+// layout
+import PagesLayout from "@/Common/PagesLayout/PagesLayout.jsx";
+
+import { MediaQueryProvider } from "@/Common/useMediaQuery.jsx";
+
+// page components
 import Home from "./Home";
-import Contact from "./Contact";
 import Staff from "./Staff";
+import Contact from "./Contact";
 
-const Routes = () => {
+// course work page components
+import CourseWorkLayout from "./CourseWork/CourseWorkLayout.jsx";
+import SunAndMoon from "./CourseWork/SunAndMoon/SunAndMoon.jsx";
+import Essays from "./CourseWork/Essays/Essays.jsx";
+import ResponsiveDesign from "./CourseWork/ResponsiveDesign.jsx";
+
+const MyRoutes = () => {
     return (
-        <RoutesStyled>
-            Routes
-            <Home />
-            <Contact />
-            <Staff />
-        </RoutesStyled>
+        <HashRouter>
+            <MediaQueryProvider>
+                <Routes>
+                    <Route element={<PagesLayout />}>
+                        <Route element={<Home />} path="" />
+                        <Route element={<Staff />} path="staff" />
+                        <Route element={<Contact />} path="contact" />
+
+                        <Route
+                            element={<CourseWorkLayout />}
+                            path="course-work"
+                        >
+                            <Route element={<Essays />} path="" />
+                            <Route
+                                element={<SunAndMoon />}
+                                path="sun-and-moon"
+                            />
+                            <Route
+                                element={<ResponsiveDesign />}
+                                path="responsive"
+                            />
+                        </Route>
+                    </Route>
+                </Routes>
+            </MediaQueryProvider>
+        </HashRouter>
     );
 };
 
-export default Routes;
-
-const RoutesStyled = styled.div``;
+export default MyRoutes;

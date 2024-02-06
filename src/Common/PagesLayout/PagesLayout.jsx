@@ -1,19 +1,21 @@
-import styled from 'styled-components';
-import { Outlet } from 'react-router-dom';
+import styled from "styled-components";
+import { Outlet } from "react-router-dom";
 
 /* Components ---------------------------*/
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
 
 const PagesLayout = () => {
     return (
-        <PagesLayoutStyled className='PagesLayout'>
+        <PagesLayoutStyled className="PagesLayout">
             <Header />
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
             <Footer />
         </PagesLayoutStyled>
     );
-}
+};
 
 export default PagesLayout;
 

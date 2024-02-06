@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { useState } from "react";
 
-import sunImg from "./SunAndMoon/images/sun.png";
-import moonImg from "./SunAndMoon/images/moon.png";
+import sunImg from "./images/sun.png";
+import moonImg from "./images/moon.png";
 
 const SunAndMoon = () => {
     const [imgSrc, imgSrcUpdate] = useState(moonImg);
 
-    //Javascript Layer (kinda)
     const changeToSun = () => {
         imgSrcUpdate(sunImg);
     };
@@ -36,7 +35,7 @@ const SunAndMoonStyled = styled.div`
 
     h2 {
         font-size: 30px;
-        color: #1ba0a0;
+        color: #28b0b0;
     }
 
     img {
@@ -44,11 +43,12 @@ const SunAndMoonStyled = styled.div`
         margin: 30px auto;
         padding: 20px;
         border: solid 20px teal;
-        background-color: #166060;
+        background-color: #004e4e;
         transition: all 0.5s ease;
     }
+
     img:hover {
-        border-color: #ce8e20;
-        background-color: #554506;
+        border-color: #dcc12a;
+        background-color: #897815;
     }
 `;
