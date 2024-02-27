@@ -27,3 +27,8 @@ import Home from "./Home" - what shortcut did you use to quickly duplicate 2 mor
 import Home from "./Home" - what shortcut did you use to simutanously edit 2 instances of the same word? Answer: Highlight word you want and Ctrl+D to find next instance of the word you want to replace
 
 
+
+
+Git is a software that helps you manage your code history and collaborate with other developers.
+GitHub is a service that hosts your Git repositories online and provides additional features like issue tracking, code review, and project management.
+You can use Git without GitHub, but you cannot use GitHub without Git.

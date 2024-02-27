@@ -5,6 +5,7 @@ import sunImg from "./images/sun.png";
 import moonImg from "./images/moon.png";
 
 const SunAndMoon = () => {
+    // JS Layer
     const [imgSrc, imgSrcUpdate] = useState(moonImg);
 
     const changeToSun = () => {
@@ -35,7 +36,7 @@ const SunAndMoonStyled = styled.div`
 
     h2 {
         font-size: 30px;
-        color: #28b0b0;
+        color: teal;
     }
 
     img {
@@ -44,11 +45,5 @@ const SunAndMoonStyled = styled.div`
         padding: 20px;
         border: solid 20px teal;
         background-color: #004e4e;
-        transition: all 0.5s ease;
-    }
-
-    img:hover {
-        border-color: #dcc12a;
-        background-color: #897815;
     }
 `;
