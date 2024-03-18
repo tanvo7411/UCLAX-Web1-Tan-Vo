@@ -17,8 +17,7 @@ const StaffList = () => {
 export default StaffList;
 
 const StaffListStyled = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
 `;

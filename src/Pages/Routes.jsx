@@ -12,13 +12,14 @@ import { MediaQueryProvider } from "@/Common/useMediaQuery.jsx";
 // page components
 import Home from "./Home/Home.jsx";
 import Staff from "./Staff/Staff.jsx";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact.jsx";
 
 // course work page components
 import CourseWorkLayout from "./CourseWork/CourseWorkLayout.jsx";
 import SunAndMoon from "./CourseWork/SunAndMoon/SunAndMoon.jsx";
 import Essays from "./CourseWork/Essays/Essays.jsx";
 import ResponsiveDesign from "./CourseWork/ResponsiveDesign.jsx";
+import Fundamentals from "./CourseWork/Fundamentals/Fundamentals.jsx";
 
 const MyRoutes = () => {
     return (
@@ -42,6 +43,10 @@ const MyRoutes = () => {
                             <Route
                                 element={<ResponsiveDesign />}
                                 path="responsive"
+                            />
+                            <Route
+                                element={<Fundamentals />}
+                                path="javascript-fundamentals"
                             />
                         </Route>
                     </Route>

@@ -1,0 +1,40 @@
+{
+  "submissions": [
+    {
+      "id": "2b009fa2-9ebc-4ea0-ad9e-84c94b0c8e51",
+      "name": "Mitch",
+      "email": "mitch@me.com",
+      "message": "Some message would go here."
+    },
+    {
+      "id": "931b2b60-24de-4ec8-9f1f-aafd17f0a404",
+      "name": "George",
+      "email": "george@me.com",
+      "message": "Another message"
+    },
+    {
+      "id": "9792672f-f6cb-4b29-98c4-5f45ba24b66b",
+      "name": "Tan",
+      "email": "tan@me.com",
+      "message": "A message from Tan"
+    },
+    {
+      "id": "a6849dc8-4ea5-4246-864c-67864f02b7f7",
+      "name": "Samantha",
+      "email": "sam@me.com",
+      "message": "My message from Samantha"
+    },
+    {
+      "id": "0dc7bafb-2529-4687-928f-924a473676f3",
+      "name": "Sarah",
+      "email": "sarah@me.com",
+      "message": "My message from Sarah"
+    },
+    {
+      "id": "e77cc479-70d8-4986-a775-aec2340048cd",
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  ]
+}
