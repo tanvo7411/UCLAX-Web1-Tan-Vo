@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import { breakpoints, useMediaQuery } from "@/Common/useMediaQuery.jsx";
 
 const ResponsiveDesign = () => {
@@ -7,8 +6,7 @@ const ResponsiveDesign = () => {
 
     return (
         <ResponsiveDesignStyled>
-            <h2>Responsive Design</h2>
-
+            <h2>RPG Coffee Shop</h2>
             <div className="boxes">
                 {isMediumAndUp && <div className="box box1">1</div>}
                 <div className="box box2">2</div>
@@ -20,12 +18,25 @@ const ResponsiveDesign = () => {
 
 export default ResponsiveDesign;
 
+const coffeeColors = {
+    dark: "#3B2A1A",
+    medium: "#7B5E40",
+    light: "#C0A080",
+};
+
 const ResponsiveDesignStyled = styled.div`
-    @media ${breakpoints.isMediumAndUp} {
-        .boxes {
-            display: flex;
-            justify-content: center;
-        }
+    color: white;
+    background-color: ${coffeeColors.dark};
+    font-family: "Papyrus", fantasy;
+
+    h2 {
+        text-shadow: 2px 2px ${coffeeColors.medium};
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 
     .box {
@@ -35,25 +46,30 @@ const ResponsiveDesignStyled = styled.div`
         line-height: 200px;
         font-size: 50px;
         text-align: center;
-        color: white;
-        background-color: teal;
         margin: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .box1 {
+        background-color: ${coffeeColors.light};
     }
     .box2 {
+        background-color: ${coffeeColors.medium};
         border-radius: 40px;
     }
     .box3 {
+        background-color: ${coffeeColors.light};
         border-radius: 100px;
     }
 
     @media ${breakpoints.isMediumAndUp} {
         .box {
-            background-color: indigo;
+            background-color: ${coffeeColors.medium};
         }
     }
     @media ${breakpoints.isLargeAndUp} {
         .box {
-            background-color: green;
+            background-color: ${coffeeColors.dark};
         }
     }
 `;

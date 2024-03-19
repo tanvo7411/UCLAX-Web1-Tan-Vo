@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
-
 import { breakpoints } from "@/Common/useMediaQuery";
+
+const coffeeColors = {
+    dark: "#3B2A1A",
+    medium: "#7B5E40",
+    light: "#C0A080",
+};
 
 const TabContent = ({ curTab }) => {
     const { title, image, text } = curTab;
@@ -28,9 +33,7 @@ TabContent.propTypes = {
 
 const TabContentStyled = styled.div`
     padding: 20px;
-    background-color: teal;
-
-    @media ${breakpoints.isMediumAndUp} {
+    background-color: ${coffeeColors.dark} @media ${breakpoints.isMediumAndUp} {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 1rem;
@@ -44,12 +47,12 @@ const TabContentStyled = styled.div`
 
     h3 {
         font-size: 30px;
-        color: white;
+        color: ${coffeeColors.light};
     }
 
     p {
         font-size: 18px;
-        color: #8cc6c6;
+        color: ${coffeeColors.medium};
         margin-bottom: 20px;
         line-height: 150%;
     }

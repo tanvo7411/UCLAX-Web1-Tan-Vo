@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Calendar from "react-calendar";
 import Inset from "@/Common/PagesLayout/Inset.jsx";
 import Slideshow from "./Slideshow/Slideshow";
 import Tabbed from "./Tabbed/Tabbed";
@@ -11,6 +11,7 @@ const Home = () => {
             <Slideshow />
             <Inset>
                 <Tabbed />
+                <Calendar />
             </Inset>
         </HomeStyled>
     );

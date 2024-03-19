@@ -2,14 +2,14 @@ import { useState } from "react";
 import styled from "styled-components";
 
 /* Components ---------------------------*/
-import SiteLogo from "../SiteLogo/SiteLogo.jsx";
+import CoffeeShopLogo from "../SiteLogo/SiteLogo.jsx";
 import MainMenu from "./MainMenu.jsx";
 import Hamburger from "./Hamburger.jsx";
 
 const Small = () => {
     const [showMenu, showMenuUpdate] = useState(false);
 
-    const toggle = () => {
+    const toggleMenu = () => {
         showMenuUpdate(!showMenu);
     };
 
@@ -19,8 +19,8 @@ const Small = () => {
 
     return (
         <SmallStyled>
-            <Hamburger toggle={toggle} />
-            <SiteLogo />
+            <Hamburger toggle={toggleMenu} />
+            <CoffeeShopLogo /> // Update the logo component here
             {showMenu && <MainMenu onClick={hideMenu} />}
         </SmallStyled>
     );
@@ -32,7 +32,7 @@ const SmallStyled = styled.div`
     display: flex;
     justify-content: center;
 
-    .SiteLogo {
+    .CoffeeShopLogo {
         height: 300px;
         display: flex;
         align-items: center;
@@ -49,13 +49,13 @@ const SmallStyled = styled.div`
 
         z-index: 100;
 
-        background-color: #034444;
+        background-color: #a67c52;
 
         a {
             display: block;
 
             padding: 10px;
-            border-bottom: solid 1px #999999;
+            border-bottom: solid 1px #d9cab3;
 
             color: white;
             text-decoration: none;
@@ -63,7 +63,7 @@ const SmallStyled = styled.div`
             &:hover,
             &:active,
             &:focus {
-                background-color: #002a2a;
+                background-color: #7f5539;
             }
         }
     }
